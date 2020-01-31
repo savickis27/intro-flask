@@ -10,9 +10,9 @@
           <ul class="menu">
             <li><a href='/home'>Home</a></li>
             
-            <li [% if active _page == 'about'%]
+              <li {% if active _page == 'about'%}
               class="active"
-            (%endlf%)>
+            {%endlf%}>
               <a href='/about'>About</a></li>
             <li><a href='/contact'>Contact</a></li>
           </ul>
