@@ -10,7 +10,6 @@ def index():
 def read_from_file():
   content = read_file()
   return content
-
 @app.route('/home')
 def home():
   return render_template('home.html')
