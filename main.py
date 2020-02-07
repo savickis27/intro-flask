@@ -40,7 +40,7 @@ def write_to_file():
   else:
     return f"request type{request_type} is not supported"
 
-@app.route('/file', methode = ['GET', 'POST'])
+@app.route('/file', methods = ['GET', 'POST'])
 def fileWork():
   if request.method == 'GET':
     return read_from_file()
@@ -48,5 +48,6 @@ def fileWork():
     return write_to_file()
   else:
     return f"Request method{request.method}not supported!"
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port = 5222, threaded = True, debug = True)
