@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from procfail import read_file
+from procfile import read_file
 app = Flask(__name__)
 
 @app.route('/')
